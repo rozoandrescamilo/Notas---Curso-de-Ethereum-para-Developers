@@ -12,7 +12,14 @@ Profesor Gustavo Grillasca
   - [Etapas de desarrollo y actualizaciones programadas](#la-moneda-eth-y-gas) 
 - [Criptografía](#criptografía)
   - [¿Qué es la criptografía asimétrica?](#qué-es-la-criptografía-asimétrica)
-
+  - [Wallets](#wallets) 
+- [Principales aplicaciones](#principales-aplicaciones)
+  - [Smart Contracts](#smart-contracts)
+  - [DeFi](#defi) 
+  - [NFT](#nft)
+  - [Aplicaciones Descentralizadas](#aplicaciones-descentralizadas)
+- [Mecanismos de consenso](#mecanismos-de-consenso)
+  - [Wallets](#wallets)
 
 # Introducción a Ethereum
 
@@ -110,3 +117,81 @@ Una función Hash es una función en la que tu puedes meter un texto y a través
 A una llave privada, es decir un texto del tamaño que sea (En nuestro caso las doce palabras de una wallet) le aplicamos la función hash y esta nos devuelve una cadena de caracteres que es la llave pública.
 
 Esta llave pública ó dirección la podemos publicar y decir a cualquiera, es como decir, que es la dirección de nuestro casillero de correos, ahí la gente puede meter dinero, nft, información, etc, pero solo que el tenga la llave privada puede acceder a los mismos, abrir el casillero.
+
+## Wallets
+
+Su función principal es proteger y administrar las privates keys, para que tu solo puedas validar tu identidad y hacer transacciones de valor dentro de la red.
+
+> Your Keys, your coins, not your Keys, not your coins.
+
+**Conceptos importantes:**
+
+- **Accounts:**
+  Entidades que tienen un balance en ETH y que pueden enviar transacciones.
+
+- **Transacciones:**
+  Una instrucción controlada por una cuenta que cambia el estado del sistema.
+
+- **Firmas Digitales**
+  Es una cadena de caracteres producida a partir de un texto con el HASH de una private key.
+
+- **Tokens**
+  Es un tipo de moneda o activo con utilidad o distinción que puede ser rastreado y transferido.
+
+# Principales aplicaciones
+
+## Smart Contracts
+
+Es un programa o protocolo que se ejecuta de forma automática y descentralizada dentro de una blockchain, y sirve para controlar una acción o documentar un evento de acuerdo a los parámetros del código que lo componen.  
+
+El objetivo de los SC es evitar la necesidad de confiar en un tercero para desintermediar los procesos y así abaratar costos, reducir tiempos de operación y minimizar fraudes.
+
+[![4](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/4.png?raw=true "4")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/4.png?raw=true "4")
+
+## DeFi
+
+> Descentralized Finance = DeFi
+
+DeFi es la abreviatura de finanzas descentralizadas que incluyen activos digitales, protocolos, contratos inteligentes y dApps construidos en blockchain.
+
+Podemos pensar en DeFi como un ecosistema financiero abierto donde se pueden construir varias herramientas y servicios financieros pequeños de manera descentralizada.
+
+Estas se pueden combinar, modificar e integrar de acuerdo con sus necesidades.
+
+Proyectos y aplicaciones con más relevancia:
+
+- Decentralized Exchanges (DEX) 
+- Stable Coins 
+- Préstamos 
+- Seguros 
+- Derivados (contratos) 
+- Margin Trade 
+- Oráculos
+
+## NFT
+
+> Non Fungible Token - NFT
+
+Es un token no fungible, una unidad de data que certifica un bien digital, esta propiedad lo hace único e irrepetible, por esta razón se puede aplicar esta tecnología en diferentes áreas como la medicina, el arte, los Meta versos, educación, inmuebles y eventos.
+
+[![5](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/5.png?raw=true "5")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/5.png?raw=true "5")
+
+Proocolos relacionados:
+
+- **ERC-20 (Ethereum Request for Comments)**
+Fue el primer token utilizado para implementar funcionalidades usando blockchain de Ethereum.
+
+- **ERC-721**
+Tokens intercambiables únicos y no fungibles.
+
+- **ERC-155**
+Permite tokens fungibles y no fungibles.
+
+## Aplicaciones Descentralizadas
+
+Son aplicaciones descentralizadas que utilizan ‘blockchain’ para que los usuarios se relacionen directamente entre ellos y cierren acuerdos sin que exista una entidad central que gestione el servicio.
+
+[![6](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/6.png?raw=true "6")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/6.png?raw=true "6")
+
+
+# Mecanismos de consenso
