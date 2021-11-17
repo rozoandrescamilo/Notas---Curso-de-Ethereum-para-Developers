@@ -19,7 +19,10 @@ Profesor Gustavo Grillasca
   - [NFT](#nft)
   - [Aplicaciones Descentralizadas](#aplicaciones-descentralizadas)
 - [Mecanismos de consenso](#mecanismos-de-consenso)
-  - [Wallets](#wallets)
+  - [Proof-of-Work, Proof-of-Stake y sistemas híbridos](#proof-of-Work-proof-of-stake-y-sistemas-híbridos)
+  - [Ethash y Casper](#ethash-y-casper)
+  - [Forks](#forks)
+  - [EIP y solucines de escalado](#eip-y-solucines-de-escalado)
 
 # Introducción a Ethereum
 
@@ -193,5 +196,79 @@ Son aplicaciones descentralizadas que utilizan ‘blockchain’ para que los usu
 
 [![6](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/6.png?raw=true "6")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/6.png?raw=true "6")
 
-
 # Mecanismos de consenso
+
+## Proof-of-Work, Proof-of-Stake y sistemas híbridos
+
+> La revolución será descentralizada.
+
+**Algoritmos de consenso:** 
+
+Mecanismos para generar acuerdos entre distintos actores distribuidos ante la posibilidad de errores, información incompleta o en presencia de adversarios.
+
+#### Proof of Work (PoW)
+
+Proof of Work es un protocolo en el que su principal objetivo es la protección frente a los ataques distribuidos de denegación de servicio (DDoS). Este protocolo tiene grandes niveles de seguridad si la red esta formada por miles de mineros. De hecho, mientras más mineros, más segura es la red.
+
+Las validaciones en la red se producen mediante un algoritmo de consenso llamado Prueba de Trabajo, que hasta la fecha ha demostrado ser eficiente manteniendo la red completamente segura, pero que al parecer no ha sido lo suficientemente amigable con el gasto energético.
+
+#### Proof of Stake (PoS)
+
+Proof of Stake (PoS) o Prueba de Participación, es un protocolo de consenso creado para reemplazar al conocido Proof of Work aportando una mejor seguridad y escalabilidad a las redes que lo implementen.
+
+Es un proceso completamente distinto al conocido protocolo de Prueba de Trabajo (PoW). Donde cada uno de sus nodos realizan un arduo trabajo de cómputo para resolver acertijos criptográficos. Lo que significa que PoW, a diferencia de PoS, necesita de grandes cantidades de energía y equipo especializado para realizar sus operaciones. En PoS, por el contrario, esto no es necesario. En PoS el proceso es mucho más sencillo y energéticamente amigable. Son estas razones por la que muchos proyectos blockchain en la actualidad se interesan por este nuevo protocolo.
+
+[![7](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/7.png?raw=true "7")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/7.png?raw=true "7")
+
+## Ethash y Casper
+
+**Ethash:**
+
+Ethash es el algoritmo PoW planeado para Ethereum 1.0. Es la última versión de Dagger-Hashimoto, aunque ya no se puede llamar así ya que muchas de las características originales de ambos algoritmos han cambiado drásticamente en el último mes de investigación y desarrollo.
+
+Es el algoritmo que hace posible el funcionamiento de la minería en Ethereum. Un algoritmo de elevada calidad y que usa algunas técnicas informáticas muy elaboradas para garantizar la mayor seguridad posible.
+Es altamente dependiente de operaciones en memoria RAM, consumiendo grandes cantidades de ancho de banda. El algoritmo es amigable con las GPU y Ofrece una excelente capacidad de verificación para cliente ligeros.
+
+**Casper:**
+
+Ethereum 2.0 (Serenity): de PoW a PoS
+
+En este tipo de algoritmo los mineros serán reemplazados por validadores. Entonces el consenso se logrará a través del voto de los validadores. Cómo en cualquier algoritmo basado en PoS, el voto de cada validador dependerá del cantidad de Ethers depositados, es decir, de su participación.
+
+Está diseñado para funcionar en un sistema sin confianza y ser más tolerante a fallas bizantinas. Esto significa que utiliza un proceso mediante el cual se puede castigar a los validadores maliciosos. Es decir, si un validador actúa de manera malintencionada será castigado de inmediato y se reducirá todo lo que está en juego. Lo mismo pasa si los validadores tienen tiempos de inactividad muy largos con su nodo. El descuido o la pereza les hará perder su apuesta. 
+
+## Forks
+
+- **Hardfork:** Es el momento en que se bifurca la red porque se crea otra moneda que no es compatible con las reglas anteriores. Por ejemplo, alguien puede crear una red Blockchain con un nuevo Bitcoin, pero pone como límite no 21millones sino 80millones, esto posible, solo que ahora no va ser parte de la red original de Bitcoin porque no cumple con las reglas originales ni la van a sostener esos mineros. Es otra Blockchain completamente distinta.
+
+- **SoftFork:** Es cuando una red Blockchain o en el ejemplo de Bitcoin recibe una actualización, pero NO necesariamente se crea otra moneda y continúa siendo compatible con versiones anteriores.
+
+- **Fork o Bifurcación:** Es la moneda es resultado de un Hardfork.
+
+- **Snapshot:** Es el momento en el que se hace esa copia o división de la red, guardando toda la información de las transacciones y saldos hasta ese momento de la blockchain.
+
+- **Ethereum Classic:** es un Fork (bifurcación) de Ethereum
+
+**Dato curioso:** Un contrato de ethereum fue hackeado y se robaron millones de dólares. Algunos no aceptaron el error y otros dijeron “el codigo es ley” por lo que se tiene que respetar aún con el hackeo. Ethereum classic son aquellos que respetaron el código con todo y su error, ethereum es el fork de aquellos que no aceptaron el error cometido y crearon su propia cadena en donde esos fondos no fueron robados nunca.
+
+[![8](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/8.jpg?raw=true "8")](https://github.com/hackmilo/Notas---Curso-de-Ethereum-para-Developers/blob/main/img/8.jpg?raw=true "8")
+
+## EIP y solucines de escalado
+
+> EIP: Ethereum Improve Proposal - Protocolos para mejorar la red al hacer una propuesta por escrito, que los miembros puedan revisar y aportar, y lentamente ir traduciendo la propuesta escrita a un bloque programado que ejecute el cambio en la red con el mayor consenso posible.
+
+Ethereum 2.0 busca:
+- Cambio de PoW a PoS.
+- Seguridad.
+- Escalado. Que se puedan ejecutar más transacciones por segundo.
+ 
+Para mejorarlo se proponen soluciones de Segunda Capa (L2) como:
+
+- Sharding -> Fragmentar una base de Datos o motor de búsqueda para aligerar la concentración de recursos y facilitar funciones. Básicamente dividir la cadena principal en pequeñas cadenas, para que estas procesen transacciones, sin cargar todo el peso del procesamiento de transacciones a la cadena principal
+- The Beacon Chain -> Una cadena paralela a la cadena de Ethereum que trabaja ya con PoS.
+- Polygon (MATC)
+- Raiden Network (LN)
+- xdai(sidechain)
+- Optimism (OVM Rollups)
+- zkSync (scaleble skRollups)
+
